@@ -1,14 +1,10 @@
 import streamlit as st
-from forms.contact import contact_form
 
 def about_us_page():
     # Ensure content is displayed
     st.image("assets/profile_image.png", width=230)  # Corrected image path
     st.title("Kulliyatul Banat Kaduna", anchor=False)
     st.write("Kulliyatul Banat is a faith-based Girls college.")
-
-    if st.button("✉️ Contact Us"):
-        contact_form()
 
     st.subheader("More about the school", anchor=False)
     st.write("""
@@ -27,7 +23,7 @@ def about_us_page():
         *   Problem-Solving: Ability to approach and solve mathematical problems, including logical reasoning and application of mathematical principles.
         *  Basic Statistical Understanding: Ability to interpret data, understand basic statistics and perform simple calculations.
         *  Financial Literacy: Ability to manage finances, understand budgeting, and make informed decisions.
-   
+
     **Digital Literacy & Modern Skills**
     *   Basic Computer Literacy: Proficiency in using computers, operating systems, word processors (like MS Word), spreadsheets (like MS Excel) and presentation software.
     *   Internet Research Skills:  Ability to effectively search online for information, evaluate sources, and synthesize data.
@@ -45,7 +41,6 @@ def about_us_page():
     *   Leadership Skills: Developing leadership qualities such as decision-making, organization, and initiative.
     *   Conflict Resolution: Ability to mediate disagreements and find peaceful solutions.
     *   Empathy and Understanding: Ability to appreciate and relate to others, with diverse backgrounds.
-
     """)
 
 # Ensure the page is callable
