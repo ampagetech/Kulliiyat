@@ -1,5 +1,5 @@
 import streamlit as st
-from pages.About_Us import about_us_page
+from pages.About import about_page
 from pages.Biology import biology_page
 from pages.Chemistry import chemistry_page
 
@@ -24,10 +24,10 @@ st.markdown("""
 
 # Automatically choose the correct page function based on Streamlit's page navigation
 def main():
-    page = st.query_params.get("page", "About_Us")
+    page = st.query_params.get("page", "About")
     
-    if page == "About_Us":
-        about_us_page()
+    if page == "About":
+        about_page()
     elif page == "Biology":
         biology_page()
     elif page == "Chemistry":
